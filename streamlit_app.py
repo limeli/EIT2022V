@@ -8,4 +8,4 @@ def click_button():
 st.write("Hello Multiverse!")
 st.button("click me", on_click = click_button)
 
-print("Fucking hell")
+st.write("Fucking hell")
