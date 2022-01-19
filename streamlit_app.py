@@ -1,21 +1,11 @@
 import numpy as np
 import streamlit as st
+from image_as_background import set_png_as_page_bg
 
-main_bg = "provotype_background.png"
-main_bg_ext = "png"
-
-st.markdown(
-    """
-    <style>
-    .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+set_png_as_page_bg('provotype_background.png')
 
 st.header('Provotype: Model Explanation')
+
 def click_button():
     st.write("you clicked! YAY!")
 
