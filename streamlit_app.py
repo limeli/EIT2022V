@@ -18,5 +18,5 @@ with col1:
 with col21:
     st.markdown("Pick a number")
 with col22:
-    st.number_input("",min_value=0, max_value=10)
+    st.number_input(None,min_value=0, max_value=10)
 
