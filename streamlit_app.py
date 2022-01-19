@@ -13,6 +13,12 @@ with col1:
     st.button("click me", on_click = click_button)
 
     st.write("Fucking hell")
+
+
 with col2:
-    st.number_input('Pick a number', 0, 10)
+    col21, col22 = st.columns(1,2)
+    with col21:
+        st.markdown("Pick a number")
+    with col22:
+        st.number_input(min_value=0, max_value=10)
 
