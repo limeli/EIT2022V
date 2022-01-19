@@ -17,12 +17,12 @@ with col1:
 
 with col2:
     st.selectbox("Gender", ["Male", "Female", "Other"])
-    st.slider("Age", 18, 100)
-    st.checkbox("Same address as parent(s)")
+    st.number_input("Age", 18, 100)
     st.selectbox("Citizenship", ["Norwegian", "Other"])
     st.selectbox("University Credits", ["0-179", "180-300", "300+"])
     st.number_input("Annual income", min_value=0, max_value=1000000)
     st.number_input("Value of personal assets", min_value=-1000000, max_value=1000000)
-    st.checkbox("Mental disorder")
     st.number_input("How many times cried this week", min_value = 0)
+    st.checkbox("Same address as parent(s)")
+    st.checkbox("Mental disorder")
 
