@@ -3,4 +3,5 @@ import streamlit as st
 
 
 st.write("Hello Multiverse!")
-st.button("click me")
+if st.button("click me"):
+    st.write("you clicked! YAY!")
