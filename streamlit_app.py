@@ -3,5 +3,7 @@ import streamlit as st
 
 
 st.write("Hello Multiverse!")
-if st.button("click me"):
+st.button("click me")
+
+def click_button():
     st.write("you clicked! YAY!")
