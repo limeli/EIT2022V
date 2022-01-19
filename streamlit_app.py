@@ -24,5 +24,5 @@ with col2:
     st.number_input("Annual income", min_value=0, max_value=1000000)
     st.number_input("Value of personal assets", min_value=-1000000, max_value=1000000)
     st.checkbox("Mental disorder")
-    st.number_input("How many times cried this week")
+    st.number_input("How many times cried this week", min_value = 0)
 
