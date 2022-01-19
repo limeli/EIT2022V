@@ -20,7 +20,7 @@ with col2:
     st.slider("Age", 18, 100)
     st.checkbox("Same address as parent(s)")
     st.selectbox("Citizenship", ["Norwegian", "Other"])
-    st.slider("University Credits", 0, 600)
+    st.selectbox("University Credits", ["0-179", "180-300", "300+"])
     st.number_input("Annual income", min_value=0, max_value=1000000)
     st.number_input("Value of personal assets", min_value=-1000000, max_value=1000000)
     st.checkbox("Mental disorder")
