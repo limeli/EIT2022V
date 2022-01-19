@@ -26,5 +26,5 @@ with col2:
     st.number_input("How many times cried this week", min_value = 0)
     st.checkbox("Same address as parent(s)")
     st.checkbox("Mental disorder")
-    st.write(f"Result: {np.random.random(low= 0, high= 10)} %")
+    st.write(f"Result: {np.random.uniform(low= 0, high= 10) :.1f} %")
 
