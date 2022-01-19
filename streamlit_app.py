@@ -1,7 +1,7 @@
 import numpy as np
 import streamlit as st
 
-main_bg = "Provotype background.PNG"
+main_bg = "provotype_background.png"
 main_bg_ext = "png"
 
 st.markdown(
