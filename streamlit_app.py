@@ -22,7 +22,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg('provotype_background.png')
+set_png_as_page_bg('./provotype_bg.png')
 
 st.header('Provotype: Model Explanation')
 col1, col2= st.columns([3, 2])
