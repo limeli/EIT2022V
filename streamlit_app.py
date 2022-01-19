@@ -16,7 +16,7 @@ with col1:
 
 
 with col2:
-    col21, col22 = st.columns(1,2)
+    col21, col22 = st.columns([1,2])
     with col21:
         st.markdown("Pick a number")
     with col22:
