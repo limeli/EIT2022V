@@ -1,7 +1,16 @@
 import numpy as np
 import streamlit as st
 
-
+ st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("./Provotype background.PNG")
+    }
+   </style>
+    """,
+    unsafe_allow_html=True
+)
 st.header('Provotype: Model Explanation')
 def click_button():
     st.write("you clicked! YAY!")
