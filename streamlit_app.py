@@ -2,16 +2,14 @@ import numpy as np
 import streamlit as st
 from image_as_background import set_png_as_page_bg
 
-set_png_as_page_bg('./provotype_background.png')
+set_png_as_page_bg('provotype_background.png')
 
 st.header('Provotype: Model Explanation')
 col1, col2= st.columns([3, 2])
+
 with col1:
     st.write("Hello Multiverse!")
     st.image('./Feature_importance.png')
-
-    st.write("Fucking hell")
-
 
 with col2:
     st.header('Model Calculator')
