@@ -1,13 +1,13 @@
 import numpy as np
 import streamlit as st
 
- st.markdown(
+st.markdown(
     """
     <style>
     .reportview-container {
         background: url("./Provotype background.PNG")
     }
-   </style>
+    </style>
     """,
     unsafe_allow_html=True
 )
