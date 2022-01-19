@@ -13,5 +13,6 @@ with col1:
     st.button("click me", on_click = click_button)
 
     st.write("Fucking hell")
+with col2:
     st.number_input('Pick a number', 0, 10)
 
