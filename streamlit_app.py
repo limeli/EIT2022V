@@ -1,7 +1,7 @@
 import numpy as np
 import streamlit as st
 
-main_bg = "./Provotype background.PNG"
+main_bg = "Provotype background.PNG"
 main_bg_ext = "png"
 
 st.markdown(
@@ -14,6 +14,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 st.header('Provotype: Model Explanation')
 def click_button():
     st.write("you clicked! YAY!")
