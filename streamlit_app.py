@@ -1,4 +1,4 @@
-
+import numpy as np
 import streamlit as st
 
 
@@ -16,6 +16,7 @@ with col1:
 
 
 with col2:
+    st.header('Model Calculator')
     st.selectbox("Gender", ["Male", "Female", "Other"])
     st.number_input("Age", 18, 100)
     st.selectbox("Citizenship", ["Norwegian", "Other"])
@@ -25,4 +26,5 @@ with col2:
     st.number_input("How many times cried this week", min_value = 0)
     st.checkbox("Same address as parent(s)")
     st.checkbox("Mental disorder")
+    st.markdown(f"Result: {np.random.rand(low= 0, high= 10)} %")
 
