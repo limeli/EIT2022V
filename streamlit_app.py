@@ -14,7 +14,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.markdown('# Provotype: Model Explanation')
-col1, col2= st.columns([3, 2])
+col1, col2, col3= st.columns([3, 1, 1])
 
 with col1:
     st.write("""Student loan fraud costs Lånekassen approximately 26 million kroner (2018) a year. In particular, applicants may falsely state that they are living away from home, and thus be eligible for an education grant (stipend). Lånekassen estimates that a recurring 4-5 % of students cannot prove that they’re living away from home. \n
@@ -28,15 +28,16 @@ In our risk calculator widget below, you see the eight most important variables 
 with col2:
     st.markdown('## Model Calculator')
     st.number_input("Age", 18, 100)
-    st.selectbox("Sex", ["Male", "Female", "Other"])
     st.selectbox("Citizenship", ["Norwegian", "Other"])
+with col3:
+    st.selectbox("Sex", ["Male", "Female", "Other"])
+    st.selectbox("Country of Study", ["Norway", "Other"])
     st.selectbox("Family Status", ["Parent", "Child"])
     st.number_input("Postal Code", 0, 9999)
     st.number_input("Value of personal assets", min_value=-1000000, max_value=1000000)
     st.number_input("Annual income", min_value=0, max_value=1000000)
     st.selectbox("Study Degree", ["Bachelor", "Master", "PhD"])
     st.selectbox("Study Subject", ["Natural Sciences", "Economics", "Social Studies", "Enginearing", "Philosophy"])
-    st.selectbox("Country of Study", ["Norway", "Other"])
     st.number_input("Startup year", 2010, 2021)
     st.number_input("Expected year of completed education", 2011, 2030)
     st.selectbox("University Credits", ["0-179", "180-300", "300+"])
