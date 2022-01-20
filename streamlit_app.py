@@ -14,7 +14,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.markdown('# Provotype: Model Explanation')
-col1, col2, col3= st.columns([3, 1, 1])
+col1, col2= st.columns([3, 2])
+with col2:
+    st.markdown('## Model Calculator')
 
 with col1:
     st.write("""Student loan fraud costs Lånekassen approximately 26 million kroner (2018) a year. In particular, applicants may falsely state that they are living away from home, and thus be eligible for an education grant (stipend). Lånekassen estimates that a recurring 4-5 % of students cannot prove that they’re living away from home. \n
@@ -25,8 +27,8 @@ In our risk calculator widget below, you see the eight most important variables 
     st.markdown("## Feature Importance")
     st.image('./Feature_importance.png')
 
+col1, col2, col3= st.columns([3, 1, 1])
 with col2:
-    st.markdown('## Model Calculator')
     st.number_input("Age", 18, 100)
     st.selectbox("Citizenship", ["Norwegian", "Other"])
 with col3:
