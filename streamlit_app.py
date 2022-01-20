@@ -35,7 +35,6 @@ with col2:
     st.number_input("Age", 18, 100)
     st.selectbox("Citizenship", ["Norwegian", "Other"])
     st.number_input("Postal Code", 0, 9999)
-    st.number_input("Annual income", min_value=0, max_value=1000000)
     st.selectbox("Annual income", ["0 NOK", "0 - 20 000 NOK", "20 000 - 100 000 NOK", "100 000 - 195 000 NOK", "Above 195 000 NOK"])
     st.selectbox("Study Degree", ["Bachelor", "Master", "PhD"])
     st.number_input("Startup year", 2010, 2021)
