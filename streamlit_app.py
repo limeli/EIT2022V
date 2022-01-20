@@ -6,7 +6,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://i.ibb.co/XJxXp9Y/Provotype-background-2.png");
+        background: url("https://ibb.co/xCJtvMf");
         background-size: cover;
     }
     </style>
