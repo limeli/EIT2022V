@@ -2,17 +2,17 @@ import numpy as np
 import streamlit as st
 st.set_page_config(layout="wide")
 
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://i.ibb.co/TvmxXHb/Provotype-background-3.png");
-        background-size: cover;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+    # """
+    # <style>
+    # .reportview-container {
+        # background: url("https://i.ibb.co/TvmxXHb/Provotype-background-3.png");
+        # background-size: cover;
+    # }
+    # </style>
+    # """,
+    # unsafe_allow_html=True
+# )
 st.image('./header_lonekassen.png')
 st.markdown('# Model Explanation')
 col1, col2= st.columns([3, 2])
