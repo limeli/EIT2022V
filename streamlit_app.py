@@ -48,5 +48,4 @@ with col3:
     st.selectbox("Study Subject", ["Natural Sciences", "Economics", "Social Studies", "Enginearing", "Philosophy"])
     st.number_input("Expected year of completed education", 2011, 2030)
     st.selectbox("Tuition Fees", ["0-999", "1000-10000", "10000+"])
-    st.markdown(f"{np.random.uniform(low= 0, high= 10) :.1f} %")
 
