@@ -1,15 +1,19 @@
 import numpy as np
 import streamlit as st
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://i.ibb.co/XJxXp9Y/Provotype-background-2.png?fbclid=IwAR2Avbr1cCObIlso9zuTf7VWxR5_8dtiXJsJRurHxZbW5cANlQ0KThU7BaE");
-background-size: cover;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # st.header('Provotype: Model Explanation')
 # col1, col2= st.columns([3, 2])
 
