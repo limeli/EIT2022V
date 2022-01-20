@@ -33,14 +33,14 @@ In our risk calculator widget below, you see the eight most important variables 
 with col2:
     st.number_input("Age", 18, 100)
     st.selectbox("Citizenship", ["Norwegian", "Other"])
+    st.number_input("Postal Code", 0, 9999)
+    st.number_input("Annual income", min_value=0, max_value=1000000)
+    st.selectbox("Study Degree", ["Bachelor", "Master", "PhD"])
 with col3:
     st.selectbox("Sex", ["Male", "Female", "Other"])
     st.selectbox("Country of Study", ["Norway", "Other"])
     st.selectbox("Family Status", ["Parent", "Child"])
-    st.number_input("Postal Code", 0, 9999)
     st.number_input("Value of personal assets", min_value=-1000000, max_value=1000000)
-    st.number_input("Annual income", min_value=0, max_value=1000000)
-    st.selectbox("Study Degree", ["Bachelor", "Master", "PhD"])
     st.selectbox("Study Subject", ["Natural Sciences", "Economics", "Social Studies", "Enginearing", "Philosophy"])
     st.number_input("Startup year", 2010, 2021)
     st.number_input("Expected year of completed education", 2011, 2030)
