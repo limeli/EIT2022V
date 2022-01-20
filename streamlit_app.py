@@ -22,8 +22,11 @@ with col1:
 
 with col2:
     st.header('Model Calculator')
-    st.number_input("Age", 18, 100)
-    st.selectbox("Sex", ["Male", "Female", "Other"])
+    colA, colB = st.beta_columns([1,1])
+    with colA:
+        st.number_input("Age", 18, 100)
+    with colB:
+        st.selectbox("Sex", ["Male", "Female", "Other"])
     st.selectbox("Citizenship", ["Norwegian", "Other"])
     st.multiselect("Family Status", ["Parent", "Child"])
     st.number_input("Postal Code", 0, 9999)
