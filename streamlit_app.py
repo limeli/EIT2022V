@@ -5,10 +5,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
-    }
-   .sidebar .sidebar-content {
-        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+        background: url("https://i.ibb.co/XJxXp9Y/Provotype-background-2.png")
     }
     </style>
     """,
