@@ -13,7 +13,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.markdown('# Provotype: Model Explanation')
+st.markdown('# Model Explanation')
 col1, col2= st.columns([3, 2])
 with col2:
     st.markdown('## Model Calculator')
