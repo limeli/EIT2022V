@@ -29,12 +29,13 @@ To gain trust with our applicants, we strive to provide insight into how our AI 
 In our risk calculator widget below, you see the eight most important variables of our AI model. To better understand how our model calculates risk, we invite you to manipulate the variables below and see how the risk estimate changes. 
 """)
     st.markdown("## Feature Importance")
+    with col1:
+        st.write("""To gain trust with our applicants, we strive to provide insight into how our AI makes decisions about which applications to process manually. In addition to how the risk profile is calculated. Feature importance is a useful measure of the importance of input variables in determining the outcome variable in AI models. 
+    In our risk calculator widget below, you see the eight most important variables of our AI model. To better understand how our model calculates risk, we invite you to manipulate the variables below and see how the risk estimate changes. 
+    """)
     st.image('./Feature_importance.png')
 
-with col1:
-    st.write("""To gain trust with our applicants, we strive to provide insight into how our AI makes decisions about which applications to process manually. In addition to how the risk profile is calculated. Feature importance is a useful measure of the importance of input variables in determining the outcome variable in AI models. 
-In our risk calculator widget below, you see the eight most important variables of our AI model. To better understand how our model calculates risk, we invite you to manipulate the variables below and see how the risk estimate changes. 
-""")
+
 
 with col2:
     st.text_input("Age", 18, 3)
