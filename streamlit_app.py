@@ -13,7 +13,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.header('Provotype: Model Explanation')
+st.markdown('# Provotype: Model Explanation')
 col1, col2= st.columns([3, 2])
 
 with col1:
@@ -22,11 +22,11 @@ To combat this problem, our team has developed an AI that will suggest high-risk
 To gain trust with our applicants, we strive to provide insight into how our AI makes decisions about which applications to process manually, and how the risk profile is calculated. Feature importance is a useful measure of the importance of input variables in determining the outcome variable in AI models. \n
 In our risk calculator widget below, you see the eight most important variables of our AI model. To better understand how our model calculates risk, we invite you to manipulate the variables below and see how the risk estimate changes. 
 """)
-    st.markdown("# Feature Importance")
+    st.markdown("## Feature Importance")
     st.image('./Feature_importance.png')
 
 with col2:
-    st.header('Model Calculator')
+    st.markdown('## Model Calculator')
     st.number_input("Age", 18, 100)
     st.selectbox("Sex", ["Male", "Female", "Other"])
     st.selectbox("Citizenship", ["Norwegian", "Other"])
