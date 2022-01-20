@@ -46,7 +46,7 @@ with col3:
     st.selectbox("Country of Study", ["Norway", "Other"])
     st.selectbox("Family Status", ["Parent", "Child"])
     st.number_input("Value of personal assets", min_value=-1000000, max_value=1000000)
-    st.selectbox("Study Subject", ["Natural Sciences", "Economics", "Social Studies", "Enginearing", "Philosophy"])
+    st.selectbox("Study Subject", ["Natural Sciences", "Economics", "Social Studies", "Engineering", "Philosophy"])
     st.number_input("Expected year of completed education", 2011, 2030)
     st.selectbox("Tuition Fees", ["0-999", "1000-10000", "10000+"])
 
