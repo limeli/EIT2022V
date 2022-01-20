@@ -32,9 +32,9 @@ In our risk calculator widget below, you see the eight most important variables 
     st.image('./Feature_importance.png')
 
 with col2:
-    st.text_input("Age", 18, 100)
+    st.text_input("Age")
     st.selectbox("Citizenship", ["Norwegian", "Other"])
-    st.text_input("Postal Code", 0, 9999)
+    st.text_input("Postal Code", 5)
     anual_inc = st.selectbox("Annual income", ["0 NOK", "0 - 20 000 NOK", "20 000 - 100 000 NOK", "100 000 - 195 000 NOK", "Above 195 000 NOK"])
     st.selectbox("Study Degree", ["Bachelor", "Master", "PhD"])
     st.text_input("Startup year", 2010, 2021)
