@@ -1,29 +1,16 @@
 import numpy as np
 import streamlit as st
-import base64
 
-@st.cache(allow_output_mutation=True)
-def get_base64_of_bin_file(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://ibb.co/F746J9H");
+background-size: cover;
+}
+</style>
+'''
 
-def set_png_as_page_bg(png_file):
-    bin_str = get_base64_of_bin_file(png_file)
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("data:image/png;base64,%s");
-    background-size: cover;
-    }
-    </style>
-    ''' % bin_str
-    
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-    return
-
-set_png_as_page_bg('./provotype_bg.png')
-
+st.markdown(page_bg_img, unsafe_allow_html=True)
 st.header('Provotype: Model Explanation')
 col1, col2= st.columns([3, 2])
 
