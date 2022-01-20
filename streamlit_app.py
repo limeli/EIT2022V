@@ -4,12 +4,11 @@ import streamlit as st
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-image: url("https://i.ibb.co/XJxXp9Y/Provotype-background-2.png?fbclid=IwAR2Avbr1cCObIlso9zuTf7VWxR5_8dtiXJsJRurHxZbW5cANlQ0KThU7BaE");
 background-size: cover;
 }
 </style>
 '''
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
 # st.header('Provotype: Model Explanation')
 # col1, col2= st.columns([3, 2])
