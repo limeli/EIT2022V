@@ -39,6 +39,7 @@ with col2:
     st.number_input("Startup year", 2010, 2021)
     st.selectbox("University Credits", ["0-179", "180-300", "300+"])
     st.checkbox("Same municipality as parents")
+    st.Markdown("# Result:") 
 with col3:
     st.selectbox("Sex", ["Male", "Female", "Other"])
     st.selectbox("Country of Study", ["Norway", "Other"])
@@ -47,5 +48,5 @@ with col3:
     st.selectbox("Study Subject", ["Natural Sciences", "Economics", "Social Studies", "Enginearing", "Philosophy"])
     st.number_input("Expected year of completed education", 2011, 2030)
     st.selectbox("Tuition Fees", ["0-999", "1000-10000", "10000+"])
-    st.write(f"Result: {np.random.uniform(low= 0, high= 10) :.1f} %")
+    st.Markdown(f"{np.random.uniform(low= 0, high= 10) :.1f} %")
 
