@@ -30,7 +30,7 @@ with col2:
     st.number_input("Age", 18, 100)
     st.selectbox("Citizenship", ["Norwegian", "Other"])
 with col3:
-    st.empty()
+    st.write("\n")
     st.selectbox("Sex", ["Male", "Female", "Other"])
     st.selectbox("Country of Study", ["Norway", "Other"])
     st.selectbox("Family Status", ["Parent", "Child"])
